@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Header from './Header';
 import Player from './Player';
 
 
 
-class App extends React.Component {
+class App extends Component {
   state = {
     players: [
       {
