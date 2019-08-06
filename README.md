@@ -1,9 +1,19 @@
-### Additional info & resources for this course
+# Additional Info & Notes
 
-https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down
-https://medium.com/@thejasonfile/callback-functions-in-react-e822ebede766
+### Component Lifecycle
 
-#### Controlled Components:
-* Initialise Statefor the value of the input.
-* Listen for changeson the input to detect when a value is updated.
-* Create an event handler that updates the value state.
+* Every component instance follows a cycle: It's mounded onto the DOM (Document Object Model), updated with changes in data, and it's unmounted from the DOM.
+
+### REACT Lifecycle Methods
+
+* Built-in methods that get called at each point in the life cycle.
+
+* Hooks that run code at key times in a components life cycle.
+
+* Gives you the ability to control what happens when a component mounts, updates and then unmounts.
+
+#### Understanding the timer logic:
+https://teamtreehouse.com/community/having-trouble-understanding-logic
+
+
+Source: https://teamtreehouse.com

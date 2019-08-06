@@ -3,13 +3,32 @@ import React, { Component } from 'react';
 class Stopwatch extends Component {
 
   state = {
-    isRunning: false
+    isRunning: false,
+    elapsedTime: 0,
+    previousTime: 0
   };
 
+  componentDidMount() {
+    this.intervalID = setInterval(() => this.tick(), 100);
+  }
+
+  tick = () => {
+    if (this.state.isRunnning) {
+      const now = Date.now();
+      this.setState( prevState =>  ({
+        previousTime: now,
+        elapsedTime: prevState.elapsedTime + (now - this.state.previousTime)
+      }));
+    }
+  }
+
   handleStopwatch = () => {
-    this.setState({
-      isRunning: !this.state.isRunning
-    });
+    this.setState( prevState => ({
+      isRunning: !prevState.isRunning
+    }));
+    if (!this.state.isRunning) {
+      this.setState({ previousTime: Date.now() });
+    }
   }
 
   render() {
@@ -18,7 +37,7 @@ class Stopwatch extends Component {
         <h2>Stopwatch</h2>
         <span className="stopwatch-time">0</span>
         <button onClick={this.handleStopwatch}>
-          { this.state.isRunning ? 'Start': 'Stop' }
+          { this.state.isRunning ? 'Start' : 'Stop' }
         </button> 
         <button>Reset</button>
       </div>
