@@ -26,4 +26,14 @@ As soon as the Stopwatch component mounts, the interval is set,repeatedly callin
 
 Quoted from video: [https://teamtreehouse.com/library/prevent-memory-leaks-with-componentwillunmount]
 
+### PureComponents in React
+  * [https://medium.com/front-end-weekly/using-a-purecomponent-in-reacts-262972f9f1e0]
+  * [https://reactjs.org/docs/react-api.html#reactpurecomponent]
+
+### Destructuring assignment
+  * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment]
+  * [https://www.freecodecamp.org/news/the-basics-of-destructuring-props-in-react-a196696f5477/]
+  
+   
+
 Source: https://teamtreehouse.com
