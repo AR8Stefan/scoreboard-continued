@@ -33,7 +33,9 @@ Quoted from video: [https://teamtreehouse.com/library/prevent-memory-leaks-with-
 ### Destructuring assignment
   * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment]
   * [https://www.freecodecamp.org/news/the-basics-of-destructuring-props-in-react-a196696f5477/]
-  
-   
+
+### Refs and the DOM
+  * [https://reactjs.org/docs/refs-and-the-dom.html]
+  * [https://reactjs.org/docs/glossary.html#refs]
 
 Source: https://teamtreehouse.com
