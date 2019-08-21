@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Stats = (props) => {
 
@@ -22,5 +23,16 @@ const Stats = (props) => {
         </table>
     );
 }
+
+Stats.propTypes = {
+    // players: PropTypes.arrayOf(PropTypes.shape({
+    // score: PropTypes.number
+    // }))
+
+    players: PropTypes.arrayOf(PropTypes.object)
+};
+// This method of propTypes is used to be more specific with the data
+//  type being passed to Stats. It is also not required. 
+// **Just shown as example from video**
 
 export default Stats;
