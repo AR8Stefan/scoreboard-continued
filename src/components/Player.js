@@ -1,7 +1,20 @@
 import React, {PureComponent} from 'react';
+import PropTypes from 'prop-types';
+
 import Counter from './Counter';
 
 class Player extends PureComponent {
+
+  // isRequired is telling React that a name and score are required for the application.
+  static PropTypes = {
+    name: PropTypes.string.isRequired,
+    id: PropTypes.number,
+    score: PropTypes.number.isRequired,
+    index: PropTypes.number,
+    removePlayer: PropTypes.func,
+    changeScore: PropTypes.func,
+  }
+
   render() {
     console.log(this.props.name + ' rendered');
 

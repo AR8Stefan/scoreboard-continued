@@ -13,11 +13,17 @@ const Header = ({ players, title }) => {
       </header>
     );
 }
-
+// arrayOf Method checks if an array of Objects is being passed to it.
 Header.propTypes = {
   players: PropTypes.string,
   title: PropTypes.arrayOf(PropTypes.object)
 };
-// arrayOf Method checks if an array of Objects is being passed to it.
+
+// defaultProps is passing a default string of "Scoreboard" if 
+// not specified by the parent app component. 
+// It also is type checked in Header.propTypes (Above).
+Header.defaultProps = {
+  title: "Scoreboard"
+}
 
 export default Header;
